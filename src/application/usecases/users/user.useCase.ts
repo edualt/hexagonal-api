@@ -9,4 +9,18 @@ export class UserUseCase {
     return newUser;
   }
 
+  getOne(id: string) {
+    const user = this.repository.getOne(id);
+    return user;
+  }
+
+  getOneByEmail(email: string) {
+    const user = this.repository.getOneByEmail(email);
+    return user;
+  }
+
+  updateUserVerifiedtAt(user: UserEntity) {
+    const userUpdated = this.repository.updateUserVerifiedtAt(user);
+    return userUpdated;
+  }
 }

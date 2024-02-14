@@ -1,4 +1,5 @@
 export interface UserEntity {
+  _id: string;
   name: string;
   lastName: string;
   cellphone: string;
